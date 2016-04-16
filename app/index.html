@@ -17,10 +17,21 @@
 </head>
 <body ng-app="suggestionBox">
 
-<div class="main" ng-controller="HomeController">
-    <h1>Suggestion Box</h1>
-    <div ng-view></div>
+
+<div class="container">
+  <ul class="nav nav-pills">
+    <li><a href="#/home">Home</a></li>
+    <li><a href="#/about">About</a></li>
+  </ul>
+  <ng-view></ng-view>
 </div>
+
+
+<!--<div class="main" ng-controller="HomeController">-->
+  <!--<h1>Suggestion Box</h1>-->
+  <!--<div ng-view></div>-->
+<!--</div>-->
+
 
 
 

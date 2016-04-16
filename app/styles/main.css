@@ -17,14 +17,6 @@ body {
   line-height:1.5;
 }
 
-.main {
-  display: flex;
-  flex-direction: column;
-  width: 500px;
-  margin-left:400px;
-  margin-top:50px;
-}
-
 .form {
   color: grey;
 }

@@ -3,22 +3,28 @@
 (function (app) {
 
   app.controller('CommentsController', ['$scope', 'suggestions', '$routeParams', function ($scope, suggestions, $routeParams) {
+    $scope.suggestions = suggestions.posts;
     $scope.post = suggestions.posts[$routeParams.id];
-    $scope.comments = $scope.post.comments;
+    $scope.showComment = false;
+    $scope.toggle = function () {
+      $scope.showComment = !$scope.showComment;
+    };
     $scope.addComment = function() {
       if (!$scope.body || $scope.body === '') {
         return ;
-      }
-      $scope.post.push({
-        body: $scope.body,
-        upvote:$scope.upvote
-      });
-      $scope.body = '';
-      $scope.upVote = function(comment) {
-        comment.upvotes += 1;
-      };
+      } else {
+        $scope.suggestions.push({
+          body: $scope.body,
+          upvotes: 0
 
+        });
+        $scope.body = '';
+      }
     };
+    $scope.upVoteComment = function(comment) {
+      comment.upvotes += 1;
+    };
+
 
   }]);
 

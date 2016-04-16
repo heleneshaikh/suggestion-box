@@ -1,9 +1,25 @@
-<div ng-repeat="suggestion in suggestions" class="list-group">
+<div class="main" ng-controller="HomeController">
+  <h1>Suggestion Box</h1>
+
+<div ng-repeat="suggestion in suggestions" class="list-group" ng-controller="CommentsController">
   <div class="list-group-item">
     <h4>{{suggestion.title}}</h4>
     <p>
-      <span class="glyphicon glyphicon-plus-sign green pointer" ng-click="upVote($index)"></span> Upvotes: {{ suggestion.upvotes }}
+      <span class="glyphicon glyphicon-plus-sign green pointer" ng-click="upVote($index)"></span>
+      Upvotes: {{ suggestion.upvotes }}
     </p>
+    <button class="btn btn-primary" ng-click="toggle()">Comment</button>
+    <p ng-show="showComment">
+      {{suggestion.comments}}
+    </p>
+  </div>
+
+
+
+
+
+  <!--<p><a href="" ng-click="showComment=true">Comments</a></p>-->
+    <!--<p ng-show="showComment">{{suggestion.comments}}</p>-->
   </div>
 </div>
 
