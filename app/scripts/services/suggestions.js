@@ -9,23 +9,23 @@
         {
           title: 'Free pizza at club meetings',
           upvotes: 15,
-          comments: ['']
+          comments: ['Power, beauty, and adventure']
 
         },
         {
           title: 'End all club emails with Laffy Taffy jokes',
           upvotes: 9,
-          comments: []
+          comments: ['Grow awkwardly like a warm kraken.']
         },
         {
           title: 'Retrofit water fountain with Gatorade',
           upvotes: 7,
-          comments: []
+          comments: ['Mark me codfish, ye fine wench!']
         },
         {
           title: 'Sing Bon Jovi\'s "Living on a Prayer" halfway through meetings',
           upvotes: 3,
-          comments: []
+          comments: ['Oh, yer not hoisting me without a grace!']
         }
       ]
 
