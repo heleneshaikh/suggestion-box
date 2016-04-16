@@ -1,0 +1,6 @@
+<form name="suggestForm" ng-submit="suggestForm.$valid && addSuggestion()" style="margin-left: 15px" class="form">
+  <h3>Submit your suggestion</h3>
+  <input type="text" placeholder="enter your suggestion" ng-model="title" minlength="3" maxlength="10" ng-minlength="3" ng-maxlength="10">
+  <button type="submit" class="btn btn-primary">Suggest</button>
+  {{suggestForm.$valid}}
+</form>

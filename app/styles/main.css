@@ -5,9 +5,50 @@
   padding: 0.2em 0;
 }
 
+html {
+  font-size:62.5%;
+}
+
 body {
   padding: 0;
+  background: #272A33;
+  color: white;
+  font-size: 1.8em;
+  line-height:1.5;
 }
+
+.main {
+  display: flex;
+  flex-direction: column;
+  width: 500px;
+  margin-left:400px;
+  margin-top:50px;
+}
+
+.form {
+  color: grey;
+}
+
+h3 {
+  color: #0b97c4;
+}
+
+
+.list-group-item {
+  background: #272A33;
+}
+
+.ng-pristine {
+  border-color: black;
+}
+.ng-invalid.ng-dirty {
+  border-color:red;
+}
+
+.ng-valid.ng-dirty {
+  border-color:green;
+}
+
 
 /* Everything but the jumbotron gets side spacing for mobile first views */
 .header,
@@ -17,11 +58,19 @@ body {
   padding-right: 15px;
 }
 
+h1 {
+  position: relative;
+  left: 10px;
+  bottom:10px;
+  color: #0b97c4;
+}
+
 /* Custom page header */
 .header {
   border-bottom: 1px solid #e5e5e5;
   margin-bottom: 10px;
 }
+
 /* Make the masthead heading the same height as the navigation */
 .header h3 {
   margin-top: 0;
@@ -46,6 +95,7 @@ body {
   text-align: center;
   border-bottom: 1px solid #e5e5e5;
 }
+
 .jumbotron .btn {
   font-size: 21px;
   padding: 14px 24px;
@@ -55,6 +105,7 @@ body {
 .marketing {
   margin: 40px 0;
 }
+
 .marketing p + h4 {
   margin-top: 28px;
 }
@@ -72,10 +123,12 @@ body {
     padding-left: 0;
     padding-right: 0;
   }
+
   /* Space out the masthead */
   .header {
     margin-bottom: 30px;
   }
+
   /* Remove the bottom border on the jumbotron for visual effect */
   .jumbotron {
     border-bottom: 0;

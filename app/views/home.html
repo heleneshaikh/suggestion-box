@@ -1,0 +1,11 @@
+<div ng-repeat="suggestion in suggestions" class="list-group">
+  <div class="list-group-item">
+    <h4>{{suggestion.title}}</h4>
+    <p>
+      <span class="glyphicon glyphicon-plus-sign green pointer" ng-click="upVote($index)"></span> Upvotes: {{ suggestion.upvotes }}
+    </p>
+  </div>
+</div>
+
+<suggestion-form></suggestion-form>
+<a href="#/suggestion/{{$index}}">Comments</a>
